@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://kit.fontawesome.com/99af3b901b.js" crossorigin="anonymous"></script>
+		<title>zemoora dev103 || lesson 17</title>
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+		<h1>Forms</h1>
+		<form class="signin">
+			<div>
+				<label for="uid">Username/E-mail/Phonenumber</label>
+				<input type="text" name="uid" id="uid" />
+			</div>
+			<div>
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password" />
+			</div>
+			<!-- <input type="submit" value="submit" />
+			 -->
+			<button type="submit">Log in</button>
+		</form>
+
+		<form class="signup">
+			<div>
+				<label for="fullname">Fullname</label>
+				<div class="input-icon">
+					<input type="text" name="fullname" id="fullname" />
+					<span class="icon">
+						<i class="fa-solid fa-user"></i>
+					</span>
+				</div>
+			</div>
+			<fieldset>
+				<legend>Gender</legend>
+				<div>
+					<label for="male">Male</label>
+					<input type="radio" name="gender" id="male" />
+				</div>
+				<div>
+					<label for="female">Female</label>
+					<input type="radio" name="gender" id="female" />
+				</div>
+				<div>
+					<label for="not-specified">I do not wish to specify</label>
+					<input type="radio" name="gender" id="not-specified" />
+				</div>
+			</fieldset>
+			<div>
+				<label for="nationality">Nationality</label>
+				<select name="nationality" id="nationality">
+					<option value="ng">Nigeria</option>
+					<option value="gh">Ghana</option>
+					<option value="us">United States</option>
+				</select>
+			</div>
+			<div>
+				<textarea name="bio" id="bio" cols="30" rows="10" placeholder="Enter bio..."></textarea>
+			</div>
+			<div>
+				<label for="profile-image">Profile Image <i class="fa-solid fa-arrow-up-from-bracket"></i></label>
+				<input type="file" name="img" id="profile-image" />
+			</div>
+		</form>
+	</body>
+</html>
